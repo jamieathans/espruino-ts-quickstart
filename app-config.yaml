@@ -1,1 +1,2 @@
-refreshPeriodSec: 2
+blinkPeriodMilliSec: 500
+

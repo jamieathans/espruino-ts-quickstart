@@ -1,7 +1,7 @@
-import appConfig = require("./app-config");
+import appConfig from "./app-config";
 
+let on = false;
 setInterval(() => {
-    const temp = E.getTemperature();
-    console.log("Current temp:", temp);
-}, appConfig.default.refreshPeriodSec * 1000);
-
+  on = !on;
+  LED1.write(on);
+}, appConfig.blinkPeriodMilliSec);
